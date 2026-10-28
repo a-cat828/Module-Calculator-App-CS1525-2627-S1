@@ -1,9 +1,8 @@
 def get_operation():
-    go = "go"
-    while go == "go":
+
+    while True:
         opp= input("what operation do you want to do?(/,*,-,+)")
-        if opp == "/" or opp == "*" or opp == "-" or opp == "+":
+        if opp in ["/", "*", "-", "+"]:
             return opp
-            go = no
         else:
             print("invalid operation")
